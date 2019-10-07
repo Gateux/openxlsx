@@ -65,7 +65,7 @@ loadWorkbook <- function(file, xlsxFile = NULL, isUnzipped = FALSE){
   media              <- xmlFiles[grepl("image[0-9]+.[a-z]+$", xmlFiles, perl = TRUE)]
   vmlDrawingXML      <- xmlFiles[grepl("drawings/vmlDrawing[0-9]+\\.vml$", xmlFiles, perl = TRUE)]
   vmlDrawingRelsXML  <- xmlFiles[grepl("vmlDrawing[0-9]+.vml.rels$", xmlFiles, perl = TRUE)]
-  commentsXML        <- xmlFiles[grepl("xl/comments[0-9]+\\.xml", xmlFiles, perl = TRUE)]
+  commentsXML        <- NULL # xmlFiles[grepl("xl/comments[0-9]+\\.xml", xmlFiles, perl = TRUE)]
   embeddings         <- xmlFiles[grepl("xl/embeddings", xmlFiles, perl = TRUE)]
   
   charts             <- xmlFiles[grepl("xl/charts/.*xml$", xmlFiles, perl = TRUE)]
